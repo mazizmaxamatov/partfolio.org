@@ -1,0 +1,43 @@
+header {
+    max-width: 1600px;
+    margin: auto;
+
+    .header_main {
+        display: flex;
+        justify-content: space-between;
+        padding: 180px 0px 100px 0px;
+        .left {
+            h1 {
+                font-weight: 600;
+                font-size: 58px;
+                color: #42446E;
+
+                span {
+                    color: #13B0F5;
+                }
+            }
+        }
+
+        .right {
+            a {
+                img {
+                    max-width: 100%;
+                    border-radius: 20px;
+                    border: 2px solid #13B0F5;
+                }
+
+                img:hover{
+                    margin-top: 30px;
+                }
+
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    header .header_main {
+        flex-wrap: wrap;
+    }
+}

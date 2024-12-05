@@ -1,0 +1,102 @@
+menu {
+    max-width: 1600px;
+    margin: auto;
+    text-align: center;
+
+    .menu_nav {
+        margin-top: 100px;
+
+        h1 {
+            font-weight: 700;
+            font-size: 48px;
+            color: #42446E;
+
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 32px;
+            color: #666666;
+        }
+
+    }
+
+    .menu_cards {
+        display: flex;
+        gap: 50px;
+        margin-left: 20px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+
+        .card {
+            text-align: center;
+            width: 350px;
+            box-shadow: 10px 10px 10px 10px black;
+            border-radius: 12px;
+
+            a {
+                img {
+                    max-width: 100%;
+                    border-radius: 12px 12px 0px 0px;
+                }
+            }
+
+            h1 {
+                font-weight: 500;
+                font-size: 28px;
+                color: #000000;
+                margin: 30pxp 0px 15px 0px;
+            }
+
+            p {
+                font-weight: 300;
+                font-size: 18px;
+                color: #666666;
+                margin-top: 10px;
+            }
+        }
+
+        .card_bottom {
+            display: flex;
+            gap: 50px;
+            margin-top: 30px;
+
+            .bottom_left {
+                margin-left: 40px;
+
+                a {
+                    img {
+                        max-width: 100%;
+                    }
+                }
+
+                a {
+                    img {
+                        max-width: 100%;
+                    }
+                }
+            }
+
+            .bottom_right {
+                a {
+                    img {
+                        max-width: 100%;
+                    }
+                }
+
+                a {
+                    img {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:700px) {
+    menu .menu_cards{
+        flex-wrap: wrap;
+        margin-left: 0px;
+    }
+}

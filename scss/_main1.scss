@@ -1,0 +1,56 @@
+.main1 {
+    max-width: 1600px;
+    margin: auto;
+
+    .main1_nav {
+        text-align: center;
+        margin: 200px 0px 0px 0px;
+
+        h1 {
+            font-weight: 700;
+            font-size: 48px;
+            color: #42446E;
+        }
+
+        h1:hover{
+            color: red;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 32px;
+            color: #666666;
+            margin: 20px 0px 0px 0px;
+        }
+
+        p:hover{
+            color: red;
+        }
+    }
+
+    .main1_main {
+        text-align: center;
+        margin: 100px 0px 100px 0px;
+        display: flex;
+        justify-content: space-between;
+
+        .img {
+            margin: 80px 0px;
+
+            img {
+                max-width: 100%;
+            }
+
+            img:hover{
+                margin-top: 40px;
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width:800px) {
+    .main1 .main1_main{
+        flex-wrap: wrap;
+    }
+}
